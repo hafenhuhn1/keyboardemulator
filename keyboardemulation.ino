@@ -27,8 +27,23 @@ void KeyboardPressing()
     PinData[53 - i] = PinDigitalInput(i);
     if (!PinData[53 - i])
     {
-
-      Keyboard.press(keyTable[53 - i]);
+      if (i >= 50 || (i <= 45 && i >= 42)) // joystick pins
+      {
+        if (!((53 - i) % 2))
+        {
+          Keyboard.press(keyTable[53 - i]);       //press button
+          Keyboard.release(keyTable[53 - i - 1]); //release counterpart
+        }
+        else
+        {
+          Keyboard.press(keyTable[53 - i]);       //press button
+          Keyboard.release(keyTable[53 - i + 1]); //release counterpart
+        }
+      }
+      else
+      {
+        Keyboard.press(keyTable[53 - i]);//bei allen anderen Pins
+      }
     }
     else
     {
@@ -40,8 +55,8 @@ bool PinDigitalInput(uint8_t pin)
 {
   int analogData;
   boolean digitalData;
-  if ((pin >= 2 && pin <= 13) || (pin >= 22 && pin <= 53))// für alle digitalPins
-  { 
+  if ((pin >= 2 && pin <= 13) || (pin >= 22 && pin <= 53)) // für alle digitalPins
+  {
     digitalData = digitalRead(pin);
   }
   else if (pin >= 54 && pin <= 65) //für alle analogpins
