@@ -32,7 +32,7 @@ void registerRead()
   dataB = PIOB->PIO_PDSR;
   dataC = PIOC->PIO_PDSR;
   dataD = PIOD->PIO_PDSR;
-  /* PinDataFromRegister[0] = (dataA & (1 << 8));
+  /*PinDataFromRegister[0] = (dataA & (1 << 8));
   PinDataFromRegister[1] = (dataA & (1 << 9));
   PinDataFromRegister[2] = (dataB & (1 << 25));
   PinDataFromRegister[3] = (dataC & (1 << 28));
@@ -50,14 +50,14 @@ void registerRead()
   PinDataFromRegister[15] = (dataD & (1 << 5));
   PinDataFromRegister[16] = (dataA & (1 << 13));
   PinDataFromRegister[17] = (dataA & (1 << 12));
-  PinDataFromRegister[18] = (dataA & (1 << 11));
+  PinDataFromRegister[18] = (dataA & (1 << 11));*/
   PinDataFromRegister[19] = (dataA & (1 << 10));
   PinDataFromRegister[20] = (dataB & (1 << 12));
   PinDataFromRegister[21] = (dataB & (1 << 13));
   PinDataFromRegister[22] = (dataB & (1 << 26));
   PinDataFromRegister[23] = (dataA & (1 << 14));
   PinDataFromRegister[24] = (dataA & (1 << 15));
-  PinDataFromRegister[25] = (dataD & (1 << 0));*/
+  PinDataFromRegister[25] = (dataD & (1 << 0));
   PinDataFromRegister[26] = (dataD & (1 << 1));
   PinDataFromRegister[27] = (dataD & (1 << 2));
   PinDataFromRegister[28] = (dataD & (1 << 3));
