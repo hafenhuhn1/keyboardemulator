@@ -57,14 +57,14 @@ void registerRead()
   PinDataFromRegister[22] = (dataB & (1 << 26));
   PinDataFromRegister[23] = (dataA & (1 << 14));
   PinDataFromRegister[24] = (dataA & (1 << 15));
-  PinDataFromRegister[25] = (dataD & (1 << 0));
+  PinDataFromRegister[25] = (dataD & (1 << 0));*/
   PinDataFromRegister[26] = (dataD & (1 << 1));
   PinDataFromRegister[27] = (dataD & (1 << 2));
   PinDataFromRegister[28] = (dataD & (1 << 3));
   PinDataFromRegister[29] = (dataD & (1 << 6));
   PinDataFromRegister[30] = (dataD & (1 << 9));
   PinDataFromRegister[31] = (dataA & (1 << 7));
-  PinDataFromRegister[32] = (dataD & (1 << 10));*/
+  PinDataFromRegister[32] = (dataD & (1 << 10));
   PinDataFromRegister[33] = (dataC & (1 << 1));
   PinDataFromRegister[34] = (dataC & (1 << 2));
   PinDataFromRegister[35] = (dataC & (1 << 3));
@@ -86,7 +86,7 @@ void registerRead()
   PinDataFromRegister[51] = (dataC & (1 << 12));
   PinDataFromRegister[52] = (dataB & (1 << 21));
   PinDataFromRegister[53] = (dataB & (1 << 14));
-  /*PinDataFromRegister[54] = (dataA & (1 << 16));
+  PinDataFromRegister[54] = (dataA & (1 << 16));
   PinDataFromRegister[55] = (dataA & (1 << 24));
   PinDataFromRegister[56] = (dataA & (1 << 23));
   PinDataFromRegister[57] = (dataA & (1 << 22));
@@ -110,7 +110,7 @@ void registerRead()
   PinDataFromRegister[75] = (dataA & (1 << 26));
   PinDataFromRegister[76] = (dataA & (1 << 27));
   PinDataFromRegister[77] = (dataA & (1 << 28));
-  PinDataFromRegister[78] = (dataB & (1 << 23));*/
+  PinDataFromRegister[78] = (dataB & (1 << 23));
 }
 void loop()
 {
